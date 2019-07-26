@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "npm run build && npx angular-cli-ghpages"
+    "publish": "npm run build && npx angular-cli-ghpages --dir=dist/tacta-signature-maker"
   },
   "private": true,
   "dependencies": {
