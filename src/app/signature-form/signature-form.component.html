@@ -1,0 +1,15 @@
+<form>
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="employe.name" />
+  </div>
+
+  <div>
+    <label for="position">Position: </label>
+    <input type="text" id="position" name="position" [(ngModel)]="employe.position" />
+  </div>
+</form>
+
+<div>{{ employe | json }}</div>
+
+<a [routerLink]="['signature', employe.name, employe.position]">Generate</a>
